@@ -31,12 +31,20 @@ const CarStatsChart = () => {
 
         <CartesianGrid strokeDasharray="0" stroke="#b7ffe913" />
         <Tooltip wrapperClassName="tooltip__style" cursor={false} />
+        
         <Area
           type="monotone"
           dataKey="week"
           stroke="#8884d8"
           fillOpacity={1}
           fill="url(#colorUv)"
+        />
+        <Area
+          type="monotone"
+          dataKey="prevWeek"
+          stroke="#82ca9d"
+          fillOpacity={1}
+          fill="url(#colorPv)"
         />
       </AreaChart>
     </ResponsiveContainer>

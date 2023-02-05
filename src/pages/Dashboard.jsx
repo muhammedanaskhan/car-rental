@@ -17,6 +17,12 @@ const Dashboard =() => {
             <CarStatsChart />
           </div>
         </div>
+        
+        <div className="recommend__cars-wrapper">
+          {recommendCarsData.map((item) => (
+            <RecommendCarCard item={item} key={item.id} />
+          ))}
+        </div>
       </div>
     </div>
   );
