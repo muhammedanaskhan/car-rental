@@ -1,4 +1,6 @@
 import React from 'react'
+import MileChart from "../charts/MileChart";
+import CarStatsChart from "../charts/CarStatsChart";
 
 const Dashboard =() => {
   return (
@@ -12,7 +14,7 @@ const Dashboard =() => {
 
           <div className="stats">
             <h3 className="stats__title">Car Statistics</h3>
-            <CarStatsChart />
+            {/* <CarStatsChart /> */}
           </div>
         </div>
       </div>
