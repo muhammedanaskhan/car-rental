@@ -14,7 +14,7 @@ const Dashboard =() => {
 
           <div className="stats">
             <h3 className="stats__title">Car Statistics</h3>
-            {/* <CarStatsChart /> */}
+            <CarStatsChart />
           </div>
         </div>
       </div>
