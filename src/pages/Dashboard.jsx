@@ -1,9 +1,23 @@
 import React from 'react'
 
-function Dashboard() {
+const Dashboard =() => {
   return (
-    <div>Dashboard</div>
-  )
+    <div className="dashboard">
+      <div className="dashboard__wrapper">
+         <div className="statics">
+          <div className="stats">
+            <h3 className="stats__title">Miles Statistics</h3>
+            <MileChart />
+          </div>
+
+          <div className="stats">
+            <h3 className="stats__title">Car Statistics</h3>
+            <CarStatsChart />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Dashboard
